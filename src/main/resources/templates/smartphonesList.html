@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Liste des Smartphones</title>
+    <meta charset="UTF-8">
+    <style>
+        table { border-collapse: collapse; width: 80%; margin: auto; }
+        th, td { border: 1px solid #aaa; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        h1 { text-align: center; }
+    </style>
+</head>
+<body>
+<h1>Liste des Smartphones</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Marque</th>
+        <th>Modèle</th>
+        <th>OS</th>
+        <th>Année</th>
+        <th>Taille Écran</th>
+        <th>Prix</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="phone : ${smartphones}">
+        <td th:text="${phone.marque}"></td>
+        <td th:text="${phone.modele}"></td>
+        <td th:text="${phone.os}"></td>
+        <td th:text="${phone.anneeSortie}"></td>
+        <td th:text="${phone.tailleEcran}"></td>
+        <td th:text="${phone.prix} + ' €'"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

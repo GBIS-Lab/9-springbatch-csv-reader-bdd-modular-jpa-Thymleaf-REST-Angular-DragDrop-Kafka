@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Relecture Kafka</title>
+</head>
+<body>
+<h1>🔁 Forcer la lecture des messages Kafka</h1>
+
+<form method="get" action="/replay">
+    <button type="submit">▶ Rejouer les messages</button>
+</form>
+
+<div th:if="${count}">
+    <h2 th:text="'Nombre de messages lus : ' + ${count}"></h2>
+    <ul>
+        <li th:each="smartphone : ${smartphones}"
+            th:text="${smartphone.toString()}"></li>
+    </ul>
+</div>
+</body>
+</html>

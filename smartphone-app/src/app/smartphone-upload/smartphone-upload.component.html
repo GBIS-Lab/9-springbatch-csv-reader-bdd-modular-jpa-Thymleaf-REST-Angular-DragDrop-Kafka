@@ -1,0 +1,15 @@
+<p>smartphone-upload works!</p>
+<div
+  class="drop-zone"
+  [class.hover]="isHovering"
+  (dragover)="onDragOver($event)"
+  (dragleave)="onDragLeave($event)"
+  (drop)="onFileDropped($event)"
+>
+  <p>Glissez-déposez un fichier CSV ici</p>
+  <p *ngIf="selectedFile">Fichier : {{ selectedFile.name }}</p>
+</div>
+
+<button (click)="uploadFile()">Envoyer</button>
+
+<p class="message">{{ message }}</p>

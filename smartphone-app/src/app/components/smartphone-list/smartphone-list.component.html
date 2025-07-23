@@ -1,0 +1,25 @@
+<div class="container">
+  <h2>Liste des Smartphones</h2>
+  <table class="smartphones-table">
+    <thead>
+    <tr>
+      <th>Marque</th>
+      <th>Modèle</th>
+      <th>OS</th>
+      <th>Année</th>
+      <th>Taille écran</th>
+      <th>Prix (€)</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let s of smartphones">
+      <td>{{ s.marque }}</td>
+      <td>{{ s.modele }}</td>
+      <td>{{ s.os }}</td>
+      <td>{{ s.annee }}</td>
+      <td>{{ s.tailleEcran }}</td>
+      <td>{{ s.prix }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
