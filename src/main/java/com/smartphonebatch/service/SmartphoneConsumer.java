@@ -51,7 +51,7 @@ public class SmartphoneConsumer {
             return consumedSmartphones;
         } catch (Exception e) {
             log.error("❌ Erreur lors du traitement SmartphoneConsumer.getConsumedSmartphones() de la récupération des smartphones consommés", e);
-            return List.of(); // Liste vide pour éviter de planter l’appelant
+            return List.of(); // Liste vide pour éviter le plantage demandant une liste en sortie
         }
     }
 }
