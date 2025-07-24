@@ -64,7 +64,7 @@ public class SmartphoneController {
         return smartphoneRepository.findAll();
     }
 
-    // ✅ Méthode pour l'accès par ID :
+    // Méthode pour l'accès par ID :
     @GetMapping("/{id}")
     public ResponseEntity<Smartphone> getSmartphoneById(@PathVariable Long id) {
         log.info("🔍 Récupération du smartphone avec l'ID : {}", id);
