@@ -1,8 +1,8 @@
 /*
-package com.nemezyx.smartphonebatch.service;
+package com.smartphonebatch.service;
 
 
-import com.nemezyx.smartphonebatch.model.Smartphone;
+import com.smartphonebatch.model.Smartphone;
 import org.apache.kafka.clients.consumer.*;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.springframework.kafka.support.serializer.JsonDeserializer;
