@@ -41,7 +41,7 @@ public class KafkaConsumerConfig {
         props.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
         props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
         props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, JsonDeserializer.class);
-        props.put(JsonDeserializer.TRUSTED_PACKAGES, "*"); // ou mieux : "com.nemezyx.smartphonebatch.model"
+        props.put(JsonDeserializer.TRUSTED_PACKAGES, "*"); // ou "com.smartphonebatch.model"
         props.put(ConsumerConfig.SESSION_TIMEOUT_MS_CONFIG, 6000);
         props.put(ConsumerConfig.HEARTBEAT_INTERVAL_MS_CONFIG, 2000);
         //props.put(ConsumerConfig.LISTENER_MISSING_TOPICS_FATAL, false);
