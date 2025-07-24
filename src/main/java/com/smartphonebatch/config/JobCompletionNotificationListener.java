@@ -18,7 +18,7 @@ public class JobCompletionNotificationListener extends JobExecutionListenerSuppo
     public static final Logger log = LoggerFactory.getLogger(JobCompletionNotificationListener.class);
 
     private final SmartphoneRepository smartphoneRepository;
-    private final SmartphoneProducer smartphoneProducer; // <-- Injecte le producer
+    private final SmartphoneProducer smartphoneProducer;
 
     public JobCompletionNotificationListener(SmartphoneRepository smartphoneRepository,
                                              SmartphoneProducer smartphoneProducer) {
