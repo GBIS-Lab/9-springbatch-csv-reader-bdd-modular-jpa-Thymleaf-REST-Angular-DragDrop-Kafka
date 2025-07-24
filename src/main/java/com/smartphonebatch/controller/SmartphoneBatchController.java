@@ -20,7 +20,7 @@ public class SmartphoneBatchController {
         // Passer le chemin au lecteur pour démarrer le batch
         //!!!!!!!!!!!!!!!!!!!!!!!!batchConfig.setFilePathForReader(filePath);
 
-        // Lancer le batch si nécessaire (ou laisser un autre mécanisme pour démarrer le batch)
+        // Lancer le batch si nécessaire
         // Exemple : jobLauncher.run(job, parameters);
 
         return "Fichier reçu et traitement démarré!";
